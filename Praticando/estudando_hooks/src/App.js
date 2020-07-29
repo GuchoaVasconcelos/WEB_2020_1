@@ -2,11 +2,12 @@ import React from 'react';
 import './App.css';
 import Contador from './Hooks/Contador';
 import Cidades from './Hooks/Cidades';
+import CidadesClasse from './Hooks/CidadesClasse';
 
 function App() {
   return (
     <div className="App">
-      <Cidades></Cidades>
+      <CidadesClasse></CidadesClasse>
     </div>
   );
 }

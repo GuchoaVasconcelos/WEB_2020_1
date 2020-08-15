@@ -49,7 +49,7 @@ export default class Create extends Component {
                 console.log(error)
             }
         )
-
+        this.setState({ nome: '', curso: '', IRA: '' })
     }
 
     render() {

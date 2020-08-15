@@ -5,18 +5,6 @@
       "nome": "Gabriel",
       "curso": "Engenharia de Software",
       "IRA": 8.8
-    },
-    {
-      "id": 2,
-      "nome": "Carlos",
-      "curso": "Engenharia de Computação",
-      "IRA": 8.5
-    },
-    {
-      "nome": "Johnny Marcos",
-      "curso": "Engenharia de Computação",
-      "IRA": "9.5",
-      "id": 3
     }
   ]
 }

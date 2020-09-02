@@ -1,0 +1,16 @@
+{
+  "disciplinas": [
+    {
+      "id": 1,
+      "nome": "Fundamentos de Banco de Dados",
+      "curso": "Engenharia de Software",
+      "capacidade": 50
+    },
+    {
+      "id": 2,
+      "nome": "Desenvolvimento para Web",
+      "curso": "Engenharia de Software",
+      "capacidade": 50
+    }
+  ]
+}

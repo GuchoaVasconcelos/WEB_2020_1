@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Axios from 'axios';
+import axios from 'axios';
 import TableRow from './TableRow'
 
 
@@ -11,7 +11,7 @@ export default class List extends Component {
     }
 
     componentDidMount() {
-        Axios.get('http://localhost:3002/disciplinas/list')
+        axios.get('http://localhost:3002/disciplinas/list')
             .then(
                 (res) => {
                     this.setState({ disciplinas: res.data })

@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
-import Axios from 'axios'
+import axios from 'axios'
 export default class Create extends Component {
 
     constructor(props) {
         super(props)
-        this.state = { nome: '' }
-        this.state = { curso: '' }
-        this.state = { capacidade: '' }
+        this.state = { nome: '', curso: '', capacidade: '' }
 
         this.setNome = this.setNome.bind(this)
         this.setCurso = this.setCurso.bind(this)
         this.setCapacidade = this.setCapacidade.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
-
     }
 
     setNome(e) {
@@ -38,7 +35,7 @@ export default class Create extends Component {
             curso: this.state.curso,
             capacidade: this.state.capacidade
         }
-        Axios.post('http://localhost:3002/disciplinas/create', novaDisciplina)
+        axios.post('http://localhost:3002/disciplinas/register', novaDisciplina)
         .then(
             (res) =>{
                 console.log('Disciplina inserida com sucesso.')

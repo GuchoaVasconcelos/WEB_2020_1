@@ -11,9 +11,9 @@ const ListPage = () =>
 
 
 class List extends Component {
+    isMounted = false;
     constructor(props) {
         super(props)
-        this._isMounted = false;
         this.state = { disciplinas: [], loading: false }
     }
 

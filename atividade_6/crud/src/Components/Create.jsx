@@ -24,18 +24,12 @@ export default class Create extends Component {
 
     onSubmit(e) {
         e.preventDefault()
-        /*console.log('Nome: ' + this.state.nome)
-        console.log('Curso: ' + this.state.curso)
-        console.log('Capacidade: ' + this.state.capacidade)
-        this.setState({nome: ''})
-        this.setState({curso: ''})
-        this.setState({capacidade: ''})*/
         const novaDisciplina = {
             nome: this.state.nome,
             curso: this.state.curso,
             capacidade: this.state.capacidade
         }
-        axios.post('http://localhost:3002/disciplinas/register', novaDisciplina)
+        axios.post('http://localhost:3000/disciplinas/register', novaDisciplina)
         .then(
             (res) =>{
                 console.log('Disciplina inserida com sucesso.')
